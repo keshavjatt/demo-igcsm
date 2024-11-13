@@ -1,0 +1,21 @@
+function form_resets(form_name, btn_01, btn_text_01, btn_02, btn_text_02) {
+
+    $("#" + form_name + " input[type='reset']").click();
+    // $(".select2").select2("val", "");
+
+    // $("#admin_pic_label, #aadhaar_front_label, #aadhaar_back_label").html('Choose file');
+    partial_form_resets(btn_01, btn_text_01, btn_02, btn_text_02);
+
+}
+
+function partial_form_resets(btn_01, btn_text_01, btn_02, btn_text_02) {
+
+    $('#' + btn_01).removeAttr('disabled', 'disabled');
+    $('#' + btn_01).html(btn_text_01);
+    if (btn_02 != '') {
+        $('#' + btn_02).removeAttr('disabled', 'disabled');
+        $('#' + btn_02).html(btn_text_02);
+    }
+    // $('.preloader-sec').hide();
+    // re_captcha();
+};

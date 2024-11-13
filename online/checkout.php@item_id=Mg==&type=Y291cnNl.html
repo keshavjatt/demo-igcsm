@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+				<title>IGCSM :: Sign In</title>
+		<!-- Css Files Start -->
+		<link href="https://igcsm.com/old_web/css/bootstrap.min.css?v=880164091" rel="stylesheet">
+<link href="https://igcsm.com/old_web/css/color.css?v=466691327" rel="stylesheet">
+<link href="https://igcsm.com/old_web/css/rresponsive.css?v=1034176198" rel="stylesheet">
+<link href="https://igcsm.com/old_web/css/owl.css?v=2103375721" rel="stylesheet">
+<link href="https://igcsm.com/old_web/css/fontawesome-all.min.css?v=23075100" rel="stylesheet">
+<link href="https://igcsm.com/old_web/css/icon-fonts.css?v=899993956" rel="stylesheet">
+<link href="https://igcsm.com/authen-live/assets/plugins/bootstrap-select/css/bootstrap-select.min.css?v=1554188325" rel="stylesheet"/>
+<link href="https://igcsm.com/authen-live/assets/css/jquery-confirm.css?v=2068933083" rel="stylesheet">
+<link href="https://igcsm.com/old_web/css/custom.css?v=1566429133" rel="stylesheet"> 
+
+<link href="https://igcsm.com/old_web/css/off-canvas.css?v=390251403" rel="stylesheet">
+<link href="https://igcsm.com/old_web/css/menu-main.css?v=787552789" rel="stylesheet">
+<link href="https://igcsm.com/old_web/css/new_style.css?v=664299790" rel="stylesheet">
+<link href="https://igcsm.com/old_web/css/responsive.css?v=860533702" rel="stylesheet">
+<link href="https://igcsm.com/old_web/css/spacing.css?v=533959377" rel="stylesheet">
+
+
+<!-- favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/img/fav.webp">
+<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '189982139070641');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=189982139070641&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+<link rel="apple-touch-icon" href="https://www.rgcsm.org/old_web/images/titleicon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://www.rgcsm.org/old_web/images/titleicon.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://www.rgcsm.org/old_web/images/titleicon.png">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+<meta name="apple-mobile-web-app-capable" content="yes"> 
+<meta name="apple-mobile-web-app-status-bar-style" content="black"> 
+<meta name="apple-mobile-web-app-title" content="RGCSM"> 
+<meta name="theme-color" content="#FFFFFF"/> 
+<!--<link rel="manifest" href="manifest.json"> -->
+<!--<script type="module"> -->
+<!--import "https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate";-->
+<!--const el = document.createElement("pwa-update");-->
+<!--document.body.appendChild(el); -->
+<!--</script> -->
+<!--<script  type="text/javascript"  src="pwabuilder-sw-register.js"></script> -->
+<!--<script  type="text/javascript"  src="pwabuilder-sw.js"></script>-->		<link href="https://igcsm.com/online/assets/css/style.css?v=74571129" rel="stylesheet">
+		
+		<style>
+			body {
+			background-color: #f1f2f7;
+			}
+		</style>
+		
+		
+	</head>
+	<body>
+		<!--Wrapper Start-->
+		<div class="wrapper homepage-style-1">
+			<!--Header Start-->
+			<style>
+.icon:before{
+    display:none;
+}
+/*	html body {
+	font-family: 'Open Sans', sans-serif;
+	}
+	.header-style-1.header-online .header-nav {
+		background: #fa394a;
+	}
+	.header-style-1.header-online .navbar-nav>li>a ,
+	.header-style-1.header-online .navbar-nav>li>a:hover {
+		color: #fff;
+	}
+	.header-online .cart-icon-box .icon a,
+	.header-online .wishlist-box .icon a {
+		color: #fff;
+	}
+	.header-online .cart-icon-box .icon .number,
+	.header-online .wishlist-box .icon .number {
+		background-color: #182583;
+		color: #fff;
+	}*/
+</style>
+
+<!--Full width header Start-->
+<div class="full-width-header header-style1 home1-modifiy">
+    <header id="header" class="header">
+        <div class="topbar-area dark-parimary-bg">
+            <div class="container-fluid">
+                <div class="row y-middle">
+                    <div class="col-md-7">
+                        <ul class="topbar-contact mb-0">
+                            <li>
+                                <div class="display-date">
+                                    <span id="daynum">00</span> -
+                                    <span id="month">month</span> -
+                                    <span id="year">0000</span>,
+                                    <span id="day">day</span>
+                                    <span class="display-time"></span>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="flaticon-phone"></i>
+                                <a href="tel:+91-9990-617-617">+91-9990-617-617</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-5 text-right">
+                        <ul class="topbar-right">
+                            <li class="login-register mr-2 dropdown">
+                                <a class="apply-btn px-3 dropdown-toggle" href="https://igcsm.com/online/online/login.php" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Login Now <span class="caret"></span></a>
+                                <ul class="dropdown-menu mt-1">
+                                    <li><a href="../admin-login.php.html" target="_blank">Admin </a></li>
+                                                                        <li><a href="checkout.php@item_id=MQ==&amp;type=Y291cnNl.html" target="_blank"> Login Now</a></li>
+                                                                        <!--<li><a href="https://igcsm.com/online/login.php" target="_blank">Student Login</a></li>-->
+                                    <li><a href="../admin-login.php.html" target="_blank">Franchisee Login</a></li>
+                                    
+                                </ul>
+                            </li>
+                            <!---->
+                            <!--<li class="login-register mr-2">-->
+                            <!--    <a class="apply-btn px-3" href="login.php"> Login Now</a>-->
+                            <!--</li>-->
+                                                        <!--<li class="login-register mr-2">-->
+                            <!--    <a class="apply-btn px-3" href="../../admin-login.php"> Login Now</a>-->
+                            <!--</li>-->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Menu Start -->
+        <div class="menu-area menu-sticky">
+            <div class="container-fluid">
+                <div class="row y-middle">
+                    <div class="col-lg-2 pr-0">
+                        <div class="logo-cat-wrap">
+                            <div class="logo-part">
+                                <a href="index.php.html">
+                                    <img src="../old_web/images/logo.webp" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 text-right d-none d-lg-block">
+                        <div class="menu-area">
+                            <div class="main-menu">
+                                <!--<div class="mobile-menu">-->
+                                <!--    <a class="menu-toggle">-->
+                                <!--        <i class="fa fa-bars"></i>-->
+                                <!--    </a>-->
+                                <!--</div>-->
+                                <nav class="menu">
+                                    <ul class="nav-menu">
+                                        <li><a href="../index.php.html">Home</a></li>
+
+                                        <li><a href="javascript:void()">About Us</a>
+                                            <ul class="sub-menu menu250">
+                                                <li><a href="../about.php.html">Meet IGCSM</a></li>
+                                                <li><a href="../chairman-mesage.php.html">Founder Message</a></li>
+                                                <li><a href="../board-of-management.php.html">Board of Management</a></li>
+                                                <li><a href="../board-of-advisors.php.html">Board of Advisors</a></li>
+                                                <li><a href="../team.php.html">Our Team</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li><a href="javascript:void()">Our Strength</a>
+                                            <ul class="sub-menu menu250">
+                                                <li><a href="../igcsm-schools.php.html">IGCSM Schools </a></li>
+                                                <li><a href="../vocational_studies.php.html">IGCSM Vocational Studies</a></li>
+                                                <li><a href="../technical-education.php.html">IGCSM Technical Education</a></li>
+                                                <li><a href="../higher-education.php.html">IGCSM Higher Education</a></li>
+                                                <li><a href="../international-education.php.html">IGCSM International Education</a></li>
+                                                <li><a href="../government-partnership.php.html">IGCSM Government Partnership</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li><a href="javascript:void()">Our Collaborations</a>
+                                            <ul class="sub-menu menu250">
+                                                <li><a href="../nsdc-partnership.php.html">NSDC Partnership</a></li>
+                                                <li><a href="../industry-partnership.php.html">Industry Partnership</a></li>
+                                                <li><a href="../placement-alliance.php.html">Placement Alliance</a></li>
+                                                <li><a href="../channel-partners.php.html">Our Channel Partners</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li><a href="javascript:void()">Our Courses</a>
+                                            <ul class="sub-menu menu250">
+                                                <li><a href="../certficate-course.php.html" target="_blank">Certificate Courses</a></li>
+                                                <li><a href="../diploma-course.php.html" target="_blank">Diploma Courses</a></li>
+                                                <li><a href="../advance-diploma.php.html" target="_blank">Advanced Diploma</a></li>
+                                                <li><a href="../vocational-courses.php.html" target="_blank">Vocational Courses</a></li>
+                                                <li><a href="../job-oriented-courses.php.html" target="_blank">Job Oriented Courses</a></li>
+                                                <li><a href="../technical-course.php.html" target="_blank">Technical</a></li>
+                                                <li><a href="../higher-education-course.php.html" target="_blank">Higher Education</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li><a href="javascript:void()">IGCSM Online</a>
+                                            <ul class="sub-menu menu250">
+                                                <li><a href="books.php.html">E-Books</a></li>
+                                                <li><a href="wishlist.php.html">Online Courses</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li><a href="javascript:void()" class="highlight1">Franchisee</a>
+                                            <ul class="sub-menu menu250">
+                                                <li><a href="../franchisee.php.html">Enquiry</a></li>
+                                                <li><a href="../how-to-get-affiliation.php.html">How to get Affiliation</a></li>
+                                                <li><a href="../our-approval.php.html">Our Approval</a></li>
+                                                <li><a href="../download.php.html">Downlaod</a></li>
+                                                <li><a href="../impt-clr-nft.php.html">Important Circular & Notifications</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li><a href="https://igcsm.com/contact.php">Contact</a></li>
+                                        <!--<li><a href="https://igcsm.com/online/course.php">Course</a></li>-->
+                                        <!--<li><a href="https://igcsm.com/online/books.php">E-Book</a></li>-->
+                                        <!---->
+                                        <!--<li><a href="https://igcsm.com/online/login.php"> Login Now</a></li>-->
+                                        <!---->
+                                        
+                                        
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 text-right">
+                        <div class="expand-btn-inner">
+                            <ul>
+                                <li class="wishlist-box">
+        							<div class="icon">
+        								<a href="wishlist.php.html"><i class="far fa-heart"></i></a>
+        								<span class="number">0</span>
+        							</div>
+        						</li>
+        						<li class="cart-icon-box">
+        							<div class="icon">
+        								<a href="cart.php.html"><i class="fas fa-shopping-cart"></i></a>
+        								<span class="number">0</span>
+        							</div>	
+        						</li>
+                            </ul>
+                            <span>
+                                <a id="nav-expander" class="nav-expander style3">
+                                    <span class="dot1"></span>
+                                    <span class="dot2"></span>
+                                    <span class="dot3"></span>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="right_menu_togle hidden-md">
+            <div class="sidebar-navigation">
+                <div class="d-flex justify-content-between align-items-center pb-4">
+                    <div class="canvas-logo ">
+                        <a href="index.php.html"><img src="../old_web/images/logo.webp" alt="logo"></a>
+                    </div>
+                    <div class="close-btn"><span id="nav-close" class="text-center">X</span></div>
+                </div>
+                <ul>
+                    <li><a href="index.php.html">Home</a></li>
+                    <li><a href="javascript:void()">About us <em class="fa fa-chevron-circle-down"></em></a>
+                        <ul>
+                            <li><a href="../about.php.html">Meet IGCSM </a></li>
+                            <li><a href="../chairman-mesage.php.html">Founder/Chairman</a></li>
+                            <li><a href="../board-of-management.php.html">Board of Management</a></li>
+                            <li><a href="../board-of-advisors.php.html">Board of Advisors</a></li>
+                            <li><a href="../team.php.html">Our Team</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="javascript:void()">Our Strength <em class="fa fa-chevron-circle-down"></em></a>
+                        <ul>
+                            <li><a href="../igcsm-schools.php.html">IGCSM Schools </a></li>
+                            <li><a href="../vocational_studies.php.html">IGCSM Vocational Studies</a></li>
+                            <li><a href="../technical-education.php.html">IGCSM Technical Education</a></li>
+                            <li><a href="../higher-education.php.html">IGCSM Higher Education</a></li>
+                            <li><a href="../international-education.php.html">IGCSM International Education</a></li>
+                            <li><a href="../government-partnership.php.html">IGCSM Government Partnership</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="javascript:void()">Our Collaborations <em class="fa fa-chevron-circle-down"></em></a>
+                        <ul>
+                            <li><a href="../nsdc-partnership.php.html">NSDC Partnership</a></li>
+                            <li><a href="../industry-partnership.php.html">Industry Partnership</a></li>
+                            <li><a href="../placement-alliance.php.html">Placement Alliance</a></li>
+                            <li><a href="https://igcsm.com/channel-partners.ph">Our Channel Partners</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="javascript:void()">Our Courses <em class="fa fa-chevron-circle-down"></em></a>
+                        <ul>
+                            <li><a href="../certficate-course.php.html">Certificate Courses</a></li>
+                            <li><a href="../diploma-course.php.html">Diploma Courses</a></li>
+                            <li><a href="../advance-diploma.php.html">Advanced Diploma</a></li>
+                            <li><a href="../vocational-courses.php.html">Vocational Courses</a></li>
+                            <li><a href="../job-oriented-courses.php.html">Job Oriented Courses</a></li>
+                            <li><a href="../technical-course.php.html">Technical</a></li>
+                            <li><a href="../higher-education-course.php.html">Higher Education</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="javascript:void()">IGCSM Online <em class="fa fa-chevron-circle-down"></em></a>
+                        <ul>
+                            <li><a href="books.php.html">E-Books</a></li>
+                            <li><a href="wishlist.php.html">Online Courses</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:void()">Franchisee <em class="fa fa-chevron-circle-down"></em></a> 
+                        <ul class="sub-menu menu250">
+                            <li><a href="../franchisee.php.html">Enquiry</a></li>
+                            <li><a href="../how-to-get-affiliation.php.html">How to get Affiliation</a></li>
+                            <li><a href="../our-approval.php.html">Our Approval</a></li>
+                            <li><a href="../download.php.html">Downlaod</a></li>
+                            <li><a href="../impt-clr-nft.php.html">Important Circular & Notifications</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="../gallery.php.html">Gallery</a></li>
+                    <li><a href="https://igcsm.com/contact.php">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+</div>
+<!--Full width header End-->
+<!--
+<header class="header-style-1 header-online">
+	
+    <div class="header-top">
+        <div class="container-fluid">
+            <div class="row">
+				
+                <div class="col-md-12  col-sm-4">
+                    <div class="logo">
+                        <a href="https://igcsm.com/online">
+                            <img src="https://igcsm.com/old_web/images/logo.webp" alt="" height="75px;" >
+						</a>
+					</div>
+				</div>
+				<div class="col-md-1  col-sm-4">
+				    <a href="https://igcsm.com/enquiry.php" target="_blank"><img style="width:200px" src="https://igcsm.com/online/assets/img/Franchisee.gif"></a>
+				    <a href="#" target="_blank"><img style="width:100px" src="https://igcsm.com/online/assets/img/Instructor.gif"></a>
+				</div>
+                <div class="col-md-3 col-sm-4">
+                    <ul class="header-right">
+                        <li>
+                            <img src="https://igcsm.com/old_web/images/AAMahotsav.jpg" height="75px;"/>
+						</li>
+					    <li>
+                            <img src="https://igcsm.com/old_web/images/logo-right.png"/>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+    
+
+    <div class="header-nav">
+        <div class="container">
+            <nav class="navbar">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+				</div>
+                 Collect the nav links, forms, and other content for toggling 
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a href="https://igcsm.com/index.php"  role="button" aria-haspopup="true" aria-expanded="false">Home </a>
+							
+						</li>
+                        <li><a href="https://igcsm.com/online/course.php"> Course </a></li>
+                        <li><a href="https://igcsm.com/online/books.php"> E-Book </a></li>
+                        <li><a href="https://igcsm.com/online/about.php">About Us </a></li>
+                        <li><a target="_blank" href="https://igcsm.com/online/assets/RGCSM-STUDENT-REGISTRATION-ONLINE.pdf">Student Guidline</a></li>
+                        <li><a href="https://igcsm.com/enquiry.php" target="_blank">Franchise Enquiry </a></li>
+                        <li><a href="https://igcsm.com/online/instructor_enquiry.php">Instructor Enquiry </a></li>
+													<li><a href="https://igcsm.com/online/login.php">Student Login </a></li>
+											</ul>
+					<ul class="nav navbar-nav pull-right">
+						<li class="wishlist-box">
+							<div class="icon">
+								<a href="https://igcsm.com/online/wishlist.php"><i class="far fa-heart"></i></a>
+								<span class="number">0</span>
+							</div>
+						</li>
+						<li class="cart-icon-box">
+							<div class="icon">
+								<a href="https://igcsm.com/online/cart.php"><i class="fas fa-shopping-cart"></i></a>
+								<span class="number">0</span>
+							</div>	
+						</li>
+					</ul>
+					
+				</div>
+                 /.navbar-collapse 
+			</nav>
+		</div>
+	</div>
+</header>-->		</div>
+		<div class="breadcrumbs breadcrumbs-overlay">
+            <div class="breadcrumbs-img">
+                <img src="../assets/img/breadcrumbs/login.webp" alt="Breadcrumbs Image">
+            </div>
+            <div class="breadcrumbs-text white-color">
+                <h1 class="page-title">Login</h1>
+                <ul>
+                    <li>
+                        <a class="active" href="index.php.html">Home</a>
+                    </li>
+                    <li>Login</li>
+                </ul>
+            </div>
+        </div>
+		
+		<!--Page Content Start-->
+		<div class="login pt-100 pb-100 md-pt-70 md-pb-70 bg-white">
+            <div class="container">
+                <div class="noticed boxShadow-1">
+                    <div class="main-part">  
+                        <div class="method-account">
+            				<div id="login" class="method-account login loginpage">
+            					<h2 class="login pb-4">Sign In</h2>
+            					
+            					<div>
+            						            					</div>
+            					
+            					<form name="login_frm" id="login_frm" action="checkout.php@item_id=MQ==&amp;type=Y291cnNl.html" method="post">
+            						<input type="text" name="user_login" id="user_login" class="input" placeholder="Email">
+            						<input type="password" name="user_pass" id="user_pass" class="input" placeholder="Password">
+            						<div class="submit">
+            							<button type="submit" name="B1" id="B1" class="readon submit-btn">Sign In</button>
+            						</div>
+            						<div class="row">
+            							<div class="col-md-6">
+            								<p class="text-left mb-0">New User <a href="register.php.html" >Sign Up</a></p>
+            							</div>
+            							<div class="col-md-6 text-right">
+            								<p class="mb-0"><a href="forgot_password.php.html" >Forgot password</a></p>
+            							</div>
+            						</div>
+            					</form>
+            				</div>
+			            </div>
+			        </div>
+			    </div>
+		    </div>
+		</div>	
+			
+			<!--<div class="copyrights">-->
+<!--	<div class="container-fluid">-->
+<!--		<div class="row">-->
+<!--			<div class="col-md-5">-->
+<!--				<img src="https://igcsm.com/online/assets/img/logo.png" alt="RGCSM ONLINE" style="height: 60px;">-->
+<!--				&copy; 2018 RGCSM. All Rights Reserved.-->
+<!--			</div>-->
+<!--			<div class="col-md-7 footer-bottom text-right mt-4">-->
+<!--			    <img src="https://igcsm.com/old_web/images/AAMahotsav.jpg" height="75px;" style="margin-right:10px;"/>-->
+<!--                <a href="https://play.google.com/store/apps/details?id=com.kriscent.rgcsm.online" target="_blank"><img style="width: 115px;margin-right: 20px;" src="https://igcsm.com/images/play.png"></a>-->
+				
+<!--				<ul class="flinks">-->
+<!--					<li> <a href="https://igcsm.com/online/terms_and_conditions.php"><i class="fas fa-angle-double-right"></i> Terms and Conditions </a> </li>-->
+<!--					<li> <a href="https://igcsm.com/online/privacy_policy.php"><i class="fas fa-angle-double-right"></i> Privacy Policy</a> </li>-->
+					<!--<li> <a href="/online/refund_policy.php"><i class="fas fa-angle-double-right"></i> Refund Policy </a> </li>-->
+<!--				</ul>-->
+				
+<!--				<ul class="footer-social">-->
+<!--					<li><a href="https://www.linkedin.com/in/rgcsm-kota-924516218/" target="_blank"><i class="fab fa-linkedin"></i></a></li>-->
+<!--					<li><a href="https://www.instagram.com/rgcsmskills?r=nametag" target="_blank"><i class="fab fa-instagram"></i></a></li>-->
+<!--					<li><a href="https://www.facebook.com/RGCSM.Kota" target="_blank"><i class="fab fa-facebook-f"></i></a></li>-->
+<!--					<li><a href="https://twitter.com/rgcsmkota"><i class="fab fa-twitter"></i></a></li>-->
+					<!--<li><a href="https://plus.google.com/discover" target="_blank"><i class="fab fa-google-plus-g"></i></a></li>-->
+<!--					<li><a href="https://www.youtube.com/channel/UCxaBpTbjKbfX9_OUbovosoQ"><i class="fab fa-youtube"></i></a></li>-->
+<!--				</ul>-->
+<!--			</div>-->
+<!--		</div>-->
+<!--	</div>-->
+<!--</div>-->
+<!-- Footer Start -->
+<footer class="footer">
+    <div class="footer-bottom bg-white">
+        <div class="container">
+            <div class="row y-middle">
+                <div class="col-lg-4 col-md-0 col-sm-12 md-mb-20 d-none d-lg-block">
+                    <div class="footer-logo md-text-center">
+                        <a href="https://igcsm.com/online/theme1.html"><img src="../old_web/images/logo.webp" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-7 col-sm-12 md-mb-10">
+                    <div class="copyright text-center md-text-left">
+                        <p>Copyright © <span class="dynamic-year">2024 -</span> IGCSM All
+                            Rights Reserved. </p>
+                        <!--<br>Powered By | <a href="https://kriscent.in/" target="_blank" class="textClr">Kriscent Techno Hub Pvt. Ltd.</a>-->
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-5 col-sm-12 text-right md-text-left">
+                    <ul class="footer-social">
+                        <li><a href="https://www.facebook.com/profile.php?id=61558000506256"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/IgcsmInfo" target="_blank"><img src="../old_web/images/twitter.png" alt="twitter" class="p-2"></a></li>
+                        <li><a href="https://www.instagram.com/igcsm_india/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="https://www.linkedin.com/company/igcsm" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="https://www.youtube.com/channel/UCmo6iWhJ2DJff5TcSfzwZPw" target="_blank"><i class="fa fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Footer End -->
+
+
+
+
+<script>
+	function addToCart(elem) {
+		var item_id = $(elem).attr('item_id')
+		var item_type = $(elem).attr('item_type')
+		
+		var dialog = $.dialog({
+			content: function () {
+				var self = this;
+				return $.ajax({
+					type: "post",
+					url: 'https://igcsm.com/online/before_login.php',
+					dataType: "json",
+					// cache: false,
+					// processData: false,
+					// contentType: false,
+					data: {"T1" : "add_to_cart", item_type : item_type, item_id : item_id},
+					beforeSend: function () {
+						// $(form_id + " #B1").attr("disabled", "disabled");
+						// $(form_id + " #B1").html("Sending Data...");
+					},
+					success: function (revert) {
+						self.setIcon(revert.msg_icon);
+						self.setType(revert.msg_type);
+						self.setTitle(revert.msg_title);
+						self.setContent(revert.msg_text);
+						
+						if(revert.success == true) {
+							$('.cart-icon-box .number').html(revert.cart_item_count);
+							if ($(elem).hasClass('addedToCart')) {
+								$(elem).removeClass('addedToCart')
+								$(elem).text("Add to cart");
+							}
+							else {
+								$(elem).addClass('addedToCart')
+								$(elem).text("Added to cart");
+							}
+							
+						}
+						setTimeout(function(){
+							dialog.close();
+						}, jconfirm_timeout);
+					},
+					error: function () {
+						self.setIcon("fa fa-times");
+						self.setType("red");
+						self.setTitle("Error...");
+						self.setContent("We are having some Technical issue. Please try again later.");
+						
+					}
+					
+				});
+			},
+		});
+		
+		dialog.open();
+		partial_form_resets();
+		
+		
+		
+	}
+	
+	function getEnrolled(elem) {
+		
+		var item_id = $(elem).attr('item_id')
+		var item_type = $(elem).attr('item_type')
+		
+		var dialog = $.dialog({
+			content: function () {
+				var self = this;
+				return $.ajax({
+					type: "post",
+					url: 'https://igcsm.com/online/insert.php',
+					dataType: "json",
+					// cache: false,
+					// processData: false,
+					// contentType: false,
+					data: {"T1" : "get_enrolled", item_type : item_type, item_id : item_id},
+					beforeSend: function () {
+						// $(form_id + " #B1").attr("disabled", "disabled");
+						// $(form_id + " #B1").html("Sending Data...");
+					},
+					success: function (revert) {
+						self.setIcon(revert.msg_icon);
+						self.setType(revert.msg_type);
+						self.setTitle(revert.msg_title);
+						self.setContent(revert.msg_text);
+						
+						if(revert.success == true) {
+							
+							
+						}
+						setTimeout(function(){
+							dialog.close();
+							if(revert.redir_link){
+								window.location.replace(revert.redir_link);
+							}
+						}, jconfirm_timeout);
+					},
+					error: function () {
+						self.setIcon("fa fa-times");
+						self.setType("red");
+						self.setTitle("Error...");
+						self.setContent("We are having some Technical issue. Please try again later.");
+						
+					}
+					
+				});
+			},
+		});
+		
+		dialog.open();
+		partial_form_resets();
+		
+		
+	}
+	
+	function buyNow(elem) {
+		
+		var item_id = $(elem).attr('item_id')
+		var item_type = $(elem).attr('item_type')
+		
+		var dialog = $.dialog({
+			content: function () {
+				var self = this;
+				return $.ajax({
+					type: "post",
+					url: 'https://igcsm.com/online/before_login.php',
+					dataType: "json",
+					// cache: false,
+					// processData: false,
+					// contentType: false,
+					data: {"T1" : "buy_now", item_type : item_type, item_id : item_id},
+					beforeSend: function () {
+						// $(form_id + " #B1").attr("disabled", "disabled");
+						// $(form_id + " #B1").html("Sending Data...");
+					},
+					success: function (revert) {
+						self.setIcon(revert.msg_icon);
+						self.setType(revert.msg_type);
+						self.setTitle(revert.msg_title);
+						self.setContent(revert.msg_text);
+						
+						if(revert.success == true) {
+							$('.cart-icon-box .number').html(revert.cart_item_count);
+							if ($(elem).hasClass('addedToCart')) {
+								$(elem).removeClass('addedToCart')
+								$(elem).text("Add to cart");
+							}
+							else {
+								$(elem).addClass('addedToCart')
+								$(elem).text("Added to cart");
+							}
+							
+						}
+						setTimeout(function(){
+							dialog.close();
+							if(revert.redir_link){
+								window.location.replace(revert.redir_link);
+							}
+						}, jconfirm_timeout);
+					},
+					error: function () {
+						self.setIcon("fa fa-times");
+						self.setType("red");
+						self.setTitle("Error...");
+						self.setContent("We are having some Technical issue. Please try again later.");
+						
+					}
+					
+				});
+			},
+		});
+		
+		dialog.open();
+		partial_form_resets();
+		
+		
+	}
+	
+	function removeFromCart(elem) {
+		var item_id = $(elem).attr('item_id')
+		var item_type = $(elem).attr('item_type')
+		
+		var dialog = $.dialog({
+			content: function () {
+				var self = this;
+				return $.ajax({
+					type: "post",
+					url: 'https://igcsm.com/online/before_login.php',
+					dataType: "json",
+					data: {"T1" : "remove_cart", item_type : item_type, item_id : item_id},
+					beforeSend: function () {
+						// $(form_id + " #B1").attr("disabled", "disabled");
+						// $(form_id + " #B1").html("Sending Data...");
+					},
+					success: function (revert) {
+						self.setIcon(revert.msg_icon);
+						self.setType(revert.msg_type);
+						self.setTitle(revert.msg_title);
+						self.setContent(revert.msg_text);
+						
+						if(revert.success == true) {
+							$('.cart-icon-box .number').html(revert.cart_item_count);
+						}
+						setTimeout(function(){
+							dialog.close();
+							location.reload()
+						}, jconfirm_timeout);
+					},
+					error: function () {
+						self.setIcon("fa fa-times");
+						self.setType("red");
+						self.setTitle("Error...");
+						self.setContent("We are having some Technical issue. Please try again later.");
+						
+					}
+					
+				});
+			},
+		});
+		
+		dialog.open();
+		partial_form_resets();
+	}
+	
+	
+	
+	function addToWishlist(elem) {
+		var item_id = $(elem).attr('item_id')
+		var item_type = $(elem).attr('item_type')
+		
+		var dialog = $.dialog({
+			content: function () {
+				var self = this;
+				return $.ajax({
+					type: "post",
+					url: 'https://igcsm.com/online/insert.php',
+					dataType: "json",
+					data: {"T1" : "add_wishist", item_type : item_type, item_id : item_id},
+					beforeSend: function () {
+						// $(form_id + " #B1").attr("disabled", "disabled");
+						// $(form_id + " #B1").html("Sending Data...");
+					},
+					success: function (revert) {
+						self.setIcon(revert.msg_icon);
+						self.setType(revert.msg_type);
+						self.setTitle(revert.msg_title);
+						self.setContent(revert.msg_text);
+						
+						if(revert.success == true) {
+							$('.wishlist-box .number').html(revert.wishlist_count);
+						}
+						setTimeout(function(){
+							dialog.close();
+							// location.reload()
+						}, jconfirm_timeout);
+					},
+					error: function () {
+						self.setIcon("fa fa-times");
+						self.setType("red");
+						self.setTitle("Error...");
+						self.setContent("We are having some Technical issue. Please try again later.");
+						
+					}
+					
+				});
+			},
+		});
+		
+		dialog.open();
+		partial_form_resets();
+		
+		
+		
+	}
+	
+	
+	
+	function removeFromWishlist(elem) {
+		var item_id = $(elem).attr('item_id')
+		var item_type = $(elem).attr('item_type')
+		
+		var dialog = $.dialog({
+			content: function () {
+				var self = this;
+				return $.ajax({
+					type: "post",
+					url: 'https://igcsm.com/online/update.php',
+					dataType: "json",
+					data: {"T1" : "remove_wishlist", item_type : item_type, item_id : item_id},
+					beforeSend: function () {
+						// $(form_id + " #B1").attr("disabled", "disabled");
+						// $(form_id + " #B1").html("Sending Data...");
+					},
+					success: function (revert) {
+						self.setIcon(revert.msg_icon);
+						self.setType(revert.msg_type);
+						self.setTitle(revert.msg_title);
+						self.setContent(revert.msg_text);
+						
+						if(revert.success == true) {
+							$('.wishlist-box .number').html(revert.wishlist_count);
+						}
+						setTimeout(function(){
+							dialog.close();
+							location.reload()
+						}, jconfirm_timeout);
+					},
+					error: function () {
+						self.setIcon("fa fa-times");
+						self.setType("red");
+						self.setTitle("Error...");
+						self.setContent("We are having some Technical issue. Please try again later.");
+						
+					}
+					
+				});
+			},
+		});
+		
+		dialog.open();
+		partial_form_resets();
+	}
+	
+	function printDiv(divName) {
+		var printContents = document.getElementById(divName).innerHTML;
+		var originalContents = document.body.innerHTML;
+		
+		document.body.innerHTML = printContents;
+		
+		window.print();
+		
+		document.body.innerHTML = originalContents;
+	}
+	
+</script>		</div>
+		
+		<script>var BASE_URL_FRONT_01 = 'https://igcsm.com';</script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js?v=1086276325"></script>
+<script src="https://igcsm.com/old_web/js/bootstrap.min.js?v=532678585"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+<script src="https://igcsm.com/old_web/js/custom.js?v=1399954109"></script>
+
+<script src="https://igcsm.com/old_web/js/menu-main.js?v=1826229045"></script>
+<script src="https://igcsm.com/old_web/js/jquery.nav.js?v=108409696"></script>
+<script src="https://igcsm.com/old_web/js/main.js?v=823936536"></script>
+
+<script src="https://igcsm.com/old_web/js/reset-form.js?v=924476748"></script>
+<!--<script src="https://igcsm.com/js/my-select.js?v=1507849559"></script>-->
+<script src="https://igcsm.com/old_web/js/jquery.math-captcha.js?v=1045863199" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.4/jquery-confirm.min.js"></script>
+<script src="https://igcsm.com/authen-live/lib/my-super.js?v=1394712636" type="text/javascript"></script>
+<script src="https://igcsm.com/authen-live/assets/plugins/jquery-validation/js/jquery.validate.min.js?v=77334948"></script>
+<script src="https://igcsm.com/authen-live/assets/plugins/bootstrap-select/js/bootstrap-select.min.js?v=1101218660"></script>
+
+
+
+		
+		<script>
+			var form_id = '#login_frm';
+			$(document).ready(function (e) {
+				$(form_id).on('submit', function (c) {
+					c.preventDefault();
+					var formdata = new FormData($(this)[0]);
+					formdata.append('T1', "Check_login");
+					
+					var dialog = $.dialog({
+						content: function () {
+							var self = this;
+							return $.ajax({
+								type: "post",
+								url: "check.php",
+								dataType: "json",
+								cache: false,
+								processData: false,
+								contentType: false,
+								data: formdata,
+								beforeSend: function () {
+									$(form_id + ' #B1').attr('disabled', 'disabled');
+									$(form_id + ' #B1').html('Authenticating Data...');
+								},
+								success: function (revert) {
+									self.setIcon(revert.msg_icon);
+									self.setType(revert.msg_type);
+									self.setTitle(revert.msg_title);
+									self.setContent(revert.msg_text);
+									
+									if (revert.success == true) {
+										setTimeout(function () {
+											window.location.href = revert.redir_link;
+										}, jconfirm_timeout);
+									}
+									setTimeout(function () {
+										dialog.close();
+									}, jconfirm_timeout);
+								},
+								error: function () {
+									self.setIcon('fa fa-times');
+									self.setType('red');
+									self.setTitle('Error...');
+									self.setContent('We are having some Technical issue. Please try again later.');
+									
+								}
+								
+							});
+						},
+					});
+					
+					dialog.open();
+					partial_form_resets();
+				});
+				
+				
+			});
+			
+			
+			function partial_form_resets() {
+				$(form_id + ' #B1').removeAttr('disabled', 'disabled');
+				$(form_id + ' #B1').html('Sign In');
+				
+				$(form_id + ' #user_pass').focus();
+			}
+		</script>
+		
+		
+		
+	</body>
+</html>

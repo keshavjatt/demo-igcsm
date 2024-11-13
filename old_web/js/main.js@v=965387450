@@ -1,0 +1,202 @@
+
+(function($) {
+	"use strict";
+    // sticky menu
+    var header = $('.menu-sticky');
+    var win = $(window);
+
+    win.on('scroll', function() {
+       var scroll = win.scrollTop();
+       if (scroll < 1) {
+           header.removeClass("sticky");
+       } else {
+           header.addClass("sticky");
+       }
+
+        $("section").each(function() {
+        var elementTop = $(this).offset().top - $('#header').outerHeight();
+            if(scroll >= elementTop) {
+                $(this).addClass('loaded');
+            }
+        });
+
+    });
+	
+    //window load
+    $(window).on( 'load', function() {
+        $("#loading").delay(1500).fadeOut(500);
+        $("#loading-center").on( 'click', function() {
+        $("#loading").fadeOut(500);
+        })
+    })
+
+    //preloader
+    $(window).on('load', function() {
+        $("#loader").delay(1000).fadeOut(500);
+    })
+
+  
+    //canvas menu
+    var navexpander = $('#nav-expander');
+    if(navexpander.length){
+        $('#nav-expander').on('click',function(e){
+            e.preventDefault();
+            $('body').toggleClass('nav-expanded');
+        });
+    }
+    var navclose = $('#nav-close');
+    if(navclose.length){
+        $('#nav-close').on('click',function(e){
+            e.preventDefault();
+            $('body').removeClass('nav-expanded');
+        });
+    }
+
+    /* MENU JS */
+    var togglebtn = $('.toggle-btn');
+    if(togglebtn.length){
+    	$(".toggle-btn").on("click", function () {
+    		$(this).toggleClass("active");
+    		$("body").toggleClass("hidden-menu");
+    	});
+    }
+    
+
+})(jQuery);
+
+
+
+
+$(function(){
+    var $ul = $('.sidebar-navigation > ul');
+    
+    $ul.find('li a').click(function(e){
+      var $li = $(this).parent();
+      
+      if($li.find('ul').length > 0){
+        e.preventDefault();
+        
+        if($li.hasClass('selected')){
+          $li.removeClass('selected').find('li').removeClass('selected');
+          $li.find('ul').slideUp(400);
+          $li.find('a em').removeClass('mdi-flip-v');
+        }else{
+          
+          if($li.parents('li.selected').length == 0){
+            $ul.find('li').removeClass('selected');
+            $ul.find('ul').slideUp(400);
+            $ul.find('li a em').removeClass('mdi-flip-v');
+          }else{
+            $li.parent().find('li').removeClass('selected');
+            $li.parent().find('> li ul').slideUp(400);
+            $li.parent().find('> li a em').removeClass('mdi-flip-v');
+          }
+          
+          $li.addClass('selected');
+          $li.find('>ul').slideDown(400);
+          $li.find('>a>em').addClass('mdi-flip-v');
+        }
+      }
+    });
+    
+    $('.sidebar-navigation > ul ul').each(function(i){
+      if($(this).find('>li>ul').length > 0){
+        var paddingLeft = $(this).parent().parent().find('>li>a').css('padding-left');
+        var pIntPLeft   = parseInt(paddingLeft);
+        var result      = pIntPLeft + 10;
+        
+        $(this).find('>li>a').css('padding-left',result);
+      }else{
+        var paddingLeft = $(this).parent().parent().find('>li>a').css('padding-left');
+        var pIntPLeft   = parseInt(paddingLeft);
+        var result      = pIntPLeft + 10;
+        
+        $(this).find('>li>a').css('padding-left',result).parent().addClass('selected--last');
+      }
+    });
+    
+    var t = ' li > ul ';
+    for(var i=1;i<=10;i++){
+      $('.sidebar-navigation > ul > ' + t.repeat(i)).addClass('subMenuColor' + i);
+    }
+    
+    var activeLi = $('li.selected');
+    if(activeLi.length){
+      opener(activeLi);
+    }
+    
+    function opener(li){
+      var ul = li.closest('ul');
+      if(ul.length){
+        
+          li.addClass('selected');
+          ul.addClass('open');
+          li.find('>a>em').addClass('mdi-flip-v');
+        
+        if(ul.closest('li').length){
+          opener(ul.closest('li'));
+        }else{
+          return false;
+        }
+        
+      }
+    }
+    
+  });
+
+  const displayTime = document.querySelector(".display-time");
+  // Time
+  function showTime() {
+    let time = new Date();
+    displayTime.innerText = time.toLocaleTimeString("en-US", { hour12: false });
+    setTimeout(showTime, 1000);
+  }
+  
+  showTime();
+  
+  // Date
+  function updateDate() {
+    let today = new Date();
+  
+    // return number
+    let dayName = today.getDay(),
+      dayNum = today.getDate(),
+      month = today.getMonth(),
+      year = today.getFullYear();
+  
+    const months = [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December",
+    ];
+    const dayWeek = [
+      "Sunday",
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+    ];
+    // value -> ID of the html element
+    const IDCollection = ["day", "daynum", "month", "year"];
+    // return value array with number as a index
+    const val = [dayWeek[dayName], dayNum, months[month], year];
+    for (let i = 0; i < IDCollection.length; i++) {
+      document.getElementById(IDCollection[i]).firstChild.nodeValue = val[i];
+    }
+  }
+  
+  updateDate();
+  
+  
+  

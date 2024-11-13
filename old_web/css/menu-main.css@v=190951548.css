@@ -1,0 +1,965 @@
+
+/*-----------------------------------------------------------------------------------*/
+/*	GLOBAL CSS THAT ARE APPLIED FOR ALL SCREEN SIZES
+/*-----------------------------------------------------------------------------------*/
+
+/*Topbar Part*/
+
+.topbar-part {
+  background: transparent;
+  padding: 15px 0;
+}
+.topbar-part .contact-info {
+  display: flex;
+}
+.topbar-part .contact-info .contact-part {
+  display: inline-block;
+  margin-right: 25px;
+}
+.topbar-part .contact-info .contact-part i {
+  margin-right: 10px;
+}
+.topbar-part .contact-info .contact-part i:before {
+  font-size: 15px;
+  color: #ffffff;
+}
+.topbar-part .contact-info .contact-part a {
+  font-size: 14px;
+  line-height: 40px;
+  font-weight: 400;
+  color: #ffffff;
+}
+.topbar-part .contact-info .contact-part .address {
+  font-size: 14px;
+  line-height: 40px;
+  font-weight: 400;
+  color: #ffffff;
+}
+.topbar-part .contact-info .contact-part:last-child {
+  margin: 0;
+}
+.topbar-part .topbar-sl-share .icon-part {
+  color: #0b2ba7;
+}
+.topbar-part .topbar-sl-share .icon-part li {
+  display: inline-block;
+  margin-right: 15px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #ffffff;
+}
+.topbar-part .topbar-sl-share .icon-part li a i {
+  font-size: 14px;
+  line-height: 40px;
+  font-weight: 400;
+  color: #ffffff;
+}
+.topbar-part .topbar-sl-share .icon-part li:last-child {
+  margin: 0;
+}
+
+
+.main-menu {
+    position: relative;
+}
+
+.main-menu::after {
+    display: block;
+    clear: both;
+    content: "";
+}
+.menu {
+   float: left;
+   clear: both;
+   width: 100%;
+   font-size: 0;
+}
+
+.menu ul,
+.menu li,
+.menu p,
+.menu a,
+.menu div,
+.menu i {
+   border: 0;
+   margin: 0;
+   padding: 0;
+}
+
+.menu li {
+   display: block;
+   position: relative;
+}
+
+.menu a {
+   display: block;
+   padding: 16px;
+}
+
+.menu .row {
+    float: left;
+    width: 100%;
+    position: relative;
+}
+
+
+.header .menu-area .logo-area {
+    position: relative;
+    width: 150px;
+    height: 96px;
+    line-height: 96px;
+}
+.header .menu-area .logo-area img{
+    max-width: 100%;
+    max-height: 25px;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+}
+.header .menu-area .main-menu .menu ul.nav-menu li {
+  display: inline-block;
+  margin-right: 45px;
+  padding: 0;
+}
+.header .menu-area .main-menu .menu ul.nav-menu li a {
+  transition: all 0.3s ease 0s;
+  font-family: 'Rubik', sans-serif;
+  font-size: 16px;
+  text-transform: capitalize;
+  height: 96px;
+  line-height: 96px;
+  padding: 0;
+  color: #fff;
+}
+.header .menu-area .main-menu .menu ul.nav-menu li a:hover {
+  color: #ffa000;
+}
+.header .menu-area .main-menu .menu ul.nav-menu li:last-child {
+  margin-right: 0!important;
+}
+.header .menu-area .main-menu .menu ul.nav-menu li:last-child i {
+  margin: 0;
+}
+.header .menu-area .main-menu .menu ul li a:hover,
+.header .menu-area .main-menu .menu ul li.active a,
+.header .menu-area .main-menu .menu ul li.current-menu-item > a {
+  color: #ffa000;
+}
+
+
+/*-----------------------------------------------------------------------------------*/
+/*	SUB-MENUS SETTINGS 
+/*-----------------------------------------------------------------------------------*/
+/* Hide sub-menus */
+.menu ul ul {
+	position: absolute;
+	top: 100%;
+	width: 100%;
+	background-color: #111111; 
+}
+.menu ul ul.visible, .menu ul .mega-menu ul.visible ul.sub-menu {	
+	display:block;
+   z-index: 110;
+}
+
+/* Adjust position of mega-menu */
+.menu li:hover > ul.mega-menu > li > ul {
+    position:relative;
+}
+
+.header .menu-area .main-menu .menu ul.sub-menu {
+  background-color: #ffffff;
+  margin: 0;
+  padding: 15px 0;
+  -webkit-box-shadow: 0 0 20px rgba(0,0,0,.15);
+  -moz-box-shadow: 0 0 20px rgba(0,0,0,.15);
+  -ms-box-shadow:  0 0 20px rgba(0,0,0,.15);
+  -o-box-shadow:  0 0 20px rgba(0,0,0,.15);
+  box-shadow:  0 0 20px rgba(0,0,0,.15);
+  z-index: 99;
+}
+.header .menu-area .main-menu .menu ul.sub-menu li {
+  margin: 0;
+}
+.header .menu-area .main-menu .menu ul.sub-menu li a {
+  padding: 10px 30px;
+  height: unset;
+  text-transform: capitalize;
+  line-height: unset;
+  color: #0a0a0a;
+  font-weight: 400;
+}
+.header .menu-area .main-menu .menu ul.sub-menu li a:hover {
+  color: #ffa000 !important;
+}
+.header .menu-area .main-menu .menu ul.sub-menu li.active a {
+  color: #ffa000 !important;
+}
+
+
+
+/*-----------------------------------------------------------------------------------*/
+/*  APPEARANCE SETTINGS 
+/*-----------------------------------------------------------------------------------*/
+.menu a {
+    color:#bbb;
+	
+	/* Remove the blue Webkit background when element is tapped */
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+
+/* Modifies position of icons on the menu */
+.menu li i {
+	margin-right:10px;
+	font-size:16px;
+	/* Make the font smoother for Chrome */
+	transform:translate3d(0, 0, 0);    
+}
+
+/* Put down arrows */
+.nav-menu .mega-menu > a span:after, .nav-menu > .menu-item-has-children > a span:after {
+    content:"\f107";
+    font-family:FontAwesome;
+    float:right;
+    margin:2px 0 0 5px;
+}
+
+.mega-menu h1, .mega-menu h2, .mega-menu h3 {
+	margin-bottom:24px;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*  Typography
+/*-----------------------------------------------------------------------------------*/
+.menu li {
+    font-size:14px;
+}
+
+.menu .sub-menu li a {
+	padding: 10px 14px;
+}
+
+/* Sub-menus - font size and text alignment*/
+.menu ul ul a {   
+    font-size: 15px;	
+    text-align: left;
+}
+
+
+/*-----------------------------------------------------------------------------------*/
+/*  MEGA MENU
+/*-----------------------------------------------------------------------------------*/
+.header .menu-area .main-menu .menu .nav-menu .mega-menu {
+	position: absolute;
+	left: 0;  
+	background-color: #ffffff;
+	min-width: 700px;
+}
+
+
+.header .menu-area .main-menu .menu .nav-menu .mega-menu .mega-menu-container {
+	float:left;
+	width:100%;
+	position:relative;
+    padding: 0;
+    margin: 0;
+}
+
+.header .menu-area .main-menu .menu .nav-menu .mega-menu .sub-menu {
+    display:block;
+    position:relative;
+	width:auto;
+    padding:0;
+    min-height:initial;
+    box-shadow:none;   
+}
+.header .menu-area .main-menu .menu .nav-menu .mega-menu .sub-menu li, 
+.header .menu-area .main-menu .menu .nav-menu .mega-menu .sub-menu a {
+    width:100%;
+}
+.header .menu-area .main-menu .menu .nav-menu .mega-menu .single-megamenu {
+  width: 33%;
+  float: left;
+}
+.header .menu-area .main-menu .menu .nav-menu .mega-menu .single-megamenu .sub-menu {
+	box-shadow: none;
+	text-align: left;
+}
+.header .menu-area .main-menu .menu .nav-menu .mega-menu .single-megamenu .sub-menu .menu-title {
+  font-size: 20px;
+  font-weight: 700;
+  padding: 10px 30px;
+  color: #0a0a0a;
+}
+.header .menu-area .main-menu .menu .nav-menu .mega-menu .single-megamenu:hover .sub-menu .menu-title {
+  color: #043d72;
+}
+
+
+
+/*-----------------------------------------------------------------------------------*/
+/*  Off Canvas Part CSS
+/*-----------------------------------------------------------------------------------*/
+/*Nav Expandar Part*/
+
+.expand-btn {
+  float: right;
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s ease 0s;
+  top: 50%;
+  transform: translateY(-50%)
+}
+.expand-btn span {
+  display: inline-block;
+  margin-right: 20px;
+}
+.expand-btn span a {
+  padding: 0;
+}
+.expand-btn span a i:before {
+  font-size: 15px;
+  margin: 0;
+}
+.expand-btn span a.nav-expander i {
+  font-weight: 700;
+}
+.expand-btn span a.nav-expander i:before {
+  font-size: 21px;
+  margin-left: 20px;
+}
+.expand-btn span:last-child {
+  margin: 0;
+}
+.expand-btn .header-btn {
+  padding: 10px 40px;
+  background: #ffa000;
+  color: #fff;
+  display: inline-block;
+  border-radius: 5px;
+  font-weight: 600;
+  font-family: 'Nunito', sans-serif;
+}
+.expand-btn .header-btn:hover {
+  background: #fff;
+  color: #333333;
+}
+
+.expand-btn .offcanvas-icon li span {
+  background: #fff;
+  height: 2px;
+  width: 20px;
+  display: block !important;
+  margin: 0 0 4px 0 !important;
+  border-radius: 30px;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  list-style: none;
+}
+.expand-btn .offcanvas-icon li span:last-child {
+  margin: 0 !important;
+}
+.expand-btn .offcanvas-icon:hover li span:nth-child(1) {
+  width: 10px;
+}
+.expand-btn .offcanvas-icon:hover li span:nth-child(2) {
+  width: 15px;
+  transform: rotate(180deg);
+}
+
+
+/*Off Canvas Menu*/
+.nav-expanded {
+	position: relative;
+}
+.nav-expanded nav {
+    right: 0 !important;
+}
+.off-wrap {	
+	position: absolute;
+	width: 100%;
+	background: #000;
+	height: 100%;
+	top: 0;
+	bottom: 0;
+	opacity: 0;
+	z-index: -1;
+	transition: all 0.5s ease 0s;
+}
+.nav-expanded .off-wrap {
+	opacity: 0.5;
+	z-index: 99;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*  TRANSITIONS AND EFECTS
+/*-----------------------------------------------------------------------------------*/
+.nav-menu ul {
+    -webkit-transition:all .3s ease-in-out;
+    -moz-transition:all .3s ease-in-out;
+    -ms-transition:all .3s ease-in-out;
+    -o-transition:all .3s ease-in-out;
+    transition:all .3s ease-in-out;
+}
+
+
+
+/*-----------------------------------------------------------------------------------*/
+/*  MEDIA QUERIES
+/*-----------------------------------------------------------------------------------*/
+@media screen and (min-width: 992px) {
+	
+	/*RESPONSE MENU*/
+	.menu {
+	    height: auto !important;
+	}
+	.menu li {
+    	display:inline-block;
+	}
+	
+	.nav-menu .mega-menu {
+    	position: static;
+	}
+	
+	.menu ul ul.visible {
+		visibility: hidden;
+    	opacity:0;
+	}
+	
+	/* Remove arrows if not in mobile */
+	.nav-menu .menu-item-has-children > span, 
+	.nav-menu .mega-menu > span {
+		display:none;
+	}
+	
+	/* Remove Menu Toggle if not in mobile */	
+	.menu-toggle {
+		display:none;
+	}
+	
+	/* Remove Menu Close if not in mobile */
+	.nav-menu div.sub-menu-close {
+		display:none;
+	}
+	
+	
+	/* Show sub-menus in hover */
+	.menu li:active > ul, 
+	.menu li:focus > ul, 
+	.menu li:hover > ul, 
+	.menu li:hover > ul.mega-menu > li > ul, 
+	.menu li:hover ul.mega-menu .sub-menu {		
+		display:block;
+		z-index: 17;	
+	}
+
+	/* Adjust position the sub-menus in the left */
+	.menu ul ul li > ul {
+		left: 100%;
+    right: auto;
+    margin-left: 4px !important;
+	}
+	
+	/* Adjust position the sub-menus on the top */
+	.menu ul ul ul {
+		top: 0;
+	}	
+	
+	.menu ul ul {
+		width:auto;
+	}
+	
+	/* Sub-menus - width */
+	.menu ul ul a {
+		width: 260px;	/* <- Modify for width change */
+	}
+	
+    .nav-menu .mega-menu li div.mega-menu-innner .single-magemenu {
+        width: 25%;
+        float: left;
+        padding: 0 12px;
+    }
+
+    .header .menu-area.menu-sticky {
+        transition: all 0.3s ease 0s;
+    }
+
+    .header .menu-area.menu-sticky.sticky {
+      background: #fff;
+	    position: fixed;
+	    z-index: 999;
+	    margin: 0 auto;
+      border: none;
+	    padding: 0;
+	    top: 0;
+	    left: 0;
+	    right: 0;
+	    width: 100%;
+	    -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+	    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+      -webkit-animation-duration: .5s;
+      animation-duration: .5s;
+      -webkit-animation-name: sticky-animation;
+      animation-name: sticky-animation;
+      -webkit-animation-timing-function: ease-out;
+      animation-timing-function: ease-out;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+    }
+    .header .menu-area.sticky .main-menu .menu ul li > a {
+      color: #161616;
+    }
+    .header .menu-area.sticky .main-menu .menu ul li.current-menu-item > a {
+      color: #ffa000;
+    }
+    .header .menu-area.sticky .expand-btn .header-btn:hover {
+      background: #161616;
+      color: #fff;
+    }
+
+	/* Menu Transition*/
+	.menu ul ul {
+		opacity: 0;
+		visibility: hidden;	
+		transform: translateY(-10px);
+		transform: scaleY(0);
+		transform-origin: 0 0 0;
+	}
+
+	.menu li:active > ul, .menu li:focus > ul, .menu li:hover > ul, .menu li:hover > ul.mega-menu > li > ul {    
+		 opacity: 1;
+		 visibility:visible;		
+		 transform: translateY(0px);
+		 transform: scaleY(1);
+	}
+
+	ul.mega-menu .sub-menu {
+		transform: unset;
+	}
+
+	.menu li:hover ul.mega-menu .sub-menu {
+		transform: unset;
+		opacity: 1;
+		visibility: visible;
+		transform: scaleY(1);
+	}
+		
+}
+
+@media only screen and (max-width: 991px) {
+	
+	.header .menu-area .logo-area {
+	    position: absolute;
+	    z-index: 1;
+	}
+	.header .expand-btn {
+		display: none;
+	}
+
+    .menu {
+        position: absolute;
+        z-index: 999;
+    }
+    .menu .row [class*="col-"] {
+        float: left!important;
+        width: 100%!important;
+        margin-left: 0!important;
+        margin-right: 0!important;
+    }
+   	
+	.nav-menu > li > a {
+		border-bottom:1px solid #131313;
+		text-align: left;
+	}	
+	.nav-menu > li:last-child a {
+    	border-bottom:none;
+	}
+
+	.menu ul ul {
+	    display: none;
+	}
+
+	/*Options Menu Closed*/
+	.nav-menu div.sub-menu-close {
+		float:left;
+		width:100%;
+		cursor:pointer;
+		background:#f6f3ed;		
+		color:#000;
+		font-size:14px;
+		text-align:center;	
+		height: 50px;
+		line-height: 50px;
+	}
+	
+	.nav-menu div.sub-menu-close i {		
+		font-size:16px;
+		margin-right: 5px;
+	}
+
+	.header .menu-area .main-menu .menu ul.nav-menu {
+		background: #fff;
+	}
+	.header .menu-area .main-menu .menu ul.nav-menu li {
+		display: block !important;
+		margin-right: 0 !important;
+	}
+
+	.header .menu-area .main-menu .menu ul.nav-menu li a {
+		height: 70px !important;
+		line-height: 70px !important;
+		padding: 0 0 0 20px !important;
+	}
+
+	.header .menu-area .main-menu .menu ul.sub-menu {
+		padding: 15px 0 0 !important;
+	}
+	.header .menu-area .main-menu .menu ul.sub-menu li a {
+		height: 50px !important;
+		line-height: 50px !important;
+		padding: 0 0 0 20px !important;
+	}
+	.menu .mega-menu .sub-menu div.sub-menu-close {
+	    display: none;
+	}
+
+	.header .menu-area .main-menu .menu .nav-menu .mega-menu {
+	    min-width: unset;
+	    width: 100%;
+	}
+	.header .menu-area .main-menu .menu .nav-menu .mega-menu ul.sub-menu {
+		padding: 0;
+	}
+	.header .menu-area .main-menu .menu .nav-menu .mega-menu .mega-menu-container .single-megamenu {
+		width: 100% !important;
+        padding: 0 !important;
+	}
+	.header .menu-area .main-menu .menu .nav-menu .mega-menu .single-megamenu ul.sub-menu {
+		box-shadow: none;
+	}
+	.header .menu-area .main-menu .menu .nav-menu .mega-menu .mega-menu-container .single-megamenu .sub-menu .menu-title {
+		padding: 10px 15px;
+	}
+
+	.nav-menu > .menu-item-has-children > span.menu-parent {		
+		display: block;
+		position: absolute;
+		right: 0;
+		top: 0;
+		height: 69px;
+		line-height: 69px;
+		width: 45px;
+		text-align: center;
+		cursor:pointer;
+		background: #ddd;
+		z-index: 9;
+		
+		/* Remove the blue Webkit background when element is tapped */
+		-webkit-tap-highlight-color:rgba(0,0,0,0);    
+	}	
+	.nav-menu > .menu-item-has-children .sub-menu .menu-item-has-children span.menu-parent {		
+		display: block;
+		position: absolute;
+		background: #ddd;
+		right: 0;
+		top: 0;
+		height: 47px;
+		line-height: 47px;
+		width: 45px;
+		text-align: center;
+		cursor: pointer;
+		border-left:none;	
+		z-index: 9;	
+		/* Remove the blue Webkit background when element is tapped */
+		-webkit-tap-highlight-color:rgba(0,0,0,0);    
+	}
+	.nav-menu span.menu-parent i { 
+		margin:0;
+	}
+
+	.menu-close {
+    	height: 0;		
+    	overflow: hidden!important;
+	}
+	
+	/*Menu Toggle Appearance*/
+	.menu-toggle {
+		display: block;
+		text-align: right;
+		position: relative;
+		height: 90px;
+		line-height: 90px;
+		cursor:pointer;		
+		color: #333 !important;
+		font-size: 22px;
+		text-transform: uppercase;	
+		-webkit-tap-highlight-color:rgba(0,0,0,0);
+	}	
+	
+}
+
+@media only screen and (max-width: 1080px) {	
+	.nav-menu > li > a i {
+		display:none;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+@charset "utf-8";
+
+
+a.nav-expander {
+    background: transparent;
+    color: #FFFFFF;
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    height: auto;
+    margin-right: 0;
+    padding: 0;
+    right: 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    top: 0;
+    transition: right 0.3s ease-in-out 0s;
+    width: auto;
+    z-index: 12;
+    transition: right 0.3s ease-in-out 0s;
+    -webkit-transition: right 0.3s ease-in-out 0s;
+    -moz-transition: right 0.3s ease-in-out 0s;
+    -o-transition: right 0.3s ease-in-out 0s;
+ 
+}
+ 
+a.nav-expander:hover {
+  cursor: pointer;
+}
+
+nav.right_menu_togle {
+	background: rgba(0,0,0,0.9);
+	display: block;
+	height: 100%;
+	overflow: auto;
+	position: fixed;
+	right: -23em;
+	font-size: 15px;
+	top: 0;
+	width: 23em;
+	z-index: 2000;
+	transition: right 0.3s ease-in-out 0s;
+	-webkit-transition: right 0.3s ease-in-out 0s;
+	-moz-transition: right 0.3s ease-in-out 0s;
+	-o-transition: right 0.3s ease-in-out 0s;
+}
+.nav-expanded nav {
+  right: 0;
+}
+ 
+body.nav-expanded {
+  margin-left: 0em;
+  transition: right 0.4s ease-in-out 0s;
+  -webkit-transition: right 0.4s ease-in-out 0s;
+  -moz-transition: right 0.4s ease-in-out 0s;
+  -o-transition: right 0.4s ease-in-out 0s;
+}
+.right_menu_togle .close-btn{
+	overflow: hidden;
+	padding: 35px 10px 20px;
+}
+.right_menu_togle .canvas-logo{
+    padding-left: 24px;
+    padding-bottom: 20px;
+    padding-right: 10px;
+}
+.right_menu_togle .search-wrap{
+    padding: 20px 24px 0;
+    position: relative;
+}
+.right_menu_togle .search-wrap label{
+    display: block;
+    font-size: 20px;
+    color: #fff;
+    position: relative;
+}
+.right_menu_togle .search-wrap input,
+.right_menu_togle .search-wrap button{
+    border: none;
+    outline: none;
+}
+.right_menu_togle .search-wrap input{
+    width: 100%;
+    border-radius: 30px;
+    background: #fff;
+    padding: 7px 25px;
+    margin-top: 6px;
+}
+.right_menu_togle .search-wrap button{
+    position: absolute;
+    right: 40px;
+    background: transparent;
+    cursor: pointer;
+    bottom: 7px;
+    font-size: 18px;
+}
+
+span#nav-close {
+	font-size: 20px;
+    cursor: pointer;
+    color: #fff;
+    display: block;
+    text-align: center;
+    width: 35px;
+    height: 35px;
+    line-height: 26px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    float: right;
+    font-weight: bold;
+}
+
+.sidebarnav_menu.main-menu li.menu-item-has-children:before{
+	position: absolute;
+    content: "\f078";
+    font-family: FontAwesome;
+    color: #ffffff;
+    width: 32px;
+    height: 32px;
+    line-height: 30px;
+    background: rgba(255,255,255,0.2);
+    border: 1px solid rgba(255,255,255,0.3);
+    right: 8px;
+    top: 5px;
+    cursor: pointer;
+    z-index: 999;
+    text-align: center;
+    font-size: 15px;
+	transition: 0.4s;
+	-webkit-transition: 0.4s;
+	-ms-transition: 0.4s;
+}
+.sidebarnav_menu.main-menu li.menu-item-has-children.open:before{
+    content: "\f077";
+	transition: 0.4s;
+	-webkit-transition: 0.4s;
+	-ms-transition: 0.4s;
+}
+.sidebarnav_menu.main-menu li.menu-item-has-children ul{
+	display: none;
+}
+.sidebarnav_menu.main-menu li.menu-item-has-children ul li a{
+    display: block;
+    padding: 8px 45px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.sidebarnav_menu.main-menu li ul li:hover a,
+.sidebarnav_menu.main-menu li ul li.active a{
+	background: rgba(0,0,0,0.15) !important;
+    text-transform: uppercase;
+}
+.sidebarnav_menu.main-menu li {
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+  font-size: 16px;
+  position: relative;
+  display: block;
+}
+.sidebarnav_menu.main-menu .list-unstyled li:last-child {
+	border-bottom: 0;
+}
+.sidebarnav_menu.main-menu .list-unstyled {
+ 	border-top: 1px solid rgba(255,255,255,0.15);
+}
+.sidebarnav_menu.main-menu .list-unstyled li {
+	border: 0;
+}
+.sidebarnav_menu.main-menu li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 24px;
+  display: block;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -ms-transition: 0.4s;
+}
+.sidebarnav_menu.main-menu li ul li a {
+  padding: 8px 0 8px 40px; 
+}
+.sidebarnav_menu.main-menu li a:hover {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+ 
+.sidebarnav_menu.main-menu a .caret {
+	width: 0;
+	height: 0;
+	display: inline-block;
+	vertical-align: top;
+	border-top: 4px solid #4f5963;
+	border-right: 4px solid transparent;
+	border-left: 4px solid transparent;
+	content: "";
+    margin-top: 8px;
+}
+ 
+.sidebarnav_menu.main-menu a:hover .caret {
+	border-top-color: #4f5963;
+}
+ 
+.sidebarnav_menu.main-menu li.open > a > .caret {
+	border-top: none;
+	border-bottom: 4px solid #4f5963;
+	border-right: 4px solid transparent;
+	border-left: 4px solid transparent;
+}
+ 
+.sidebarnav_menu.main-menu li.open > a:hover > .caret {
+	border-bottom-color: #4f5963;
+}
+ 
+.icon:before {
+  font-family: 'FontAwesome';
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  text-transform: none;
+  content: '\f105';
+}
+ 
+.sidebarnav_menu.main-menu li > a > span.icon {
+  float: right;
+  margin: 0.1em 1.7em -0.1em 0;
+  opacity: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+ 
+}
+ 
+.sidebarnav_menu.main-menu li > a:hover > span.icon {
+  float: right;
+  margin: 0.1em 0.8em -0.1em 0;
+  opacity: 1;
+}
+
+.sidebar_nav.navbar {
+    position: absolute;
+    min-height: auto;
+    margin-bottom: 0;
+    border: 0;
+}
+.rgcsm-menu.rgcsm-menu-close,
+.sidebar_nav.navbar-inverse{
+	background: transparent;
+}
